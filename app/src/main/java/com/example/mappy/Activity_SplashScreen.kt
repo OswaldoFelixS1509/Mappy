@@ -14,19 +14,19 @@ class Activity_SplashScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        //Esconde la status bar y muestra
-        //el splash screen como pantalla completa
+        //hide status bar and the show
+        //splash_screen in fullscreen
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
 
-        //Utilizamos el metodo PostDelayed(Runnable, time)
-        //para enviar un mensaje con delay
+        //Use postDelayed(runnable, time) method
+        //in order to send a message
         Handler().postDelayed({
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
-        }, 3000) //Esto es el tiempo con delay en milisegundos
+        }, 1000) //Time expressed on milliseconds to change activity
     }
 }

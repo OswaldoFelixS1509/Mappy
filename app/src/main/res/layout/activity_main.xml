@@ -6,14 +6,74 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+
+            <ImageView
+                android:layout_marginTop="126dp"
+                android:id="@+id/logoMappy"
+                android:contentDescription="@string/Descripcion_logo"
+                android:layout_width="171dp"
+                android:layout_height="191dp"
+                app:srcCompat="@drawable/logo_mappy" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="330dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_border"
+                android:text="@string/login"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtOr"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or" />
+
+            <Button
+
+                android:layout_marginTop="20dp"
+                android:id="@+id/btnRegister"
+                android:layout_width="330dp"
+                android:layout_height="48dp"
+                android:background="@drawable/button_border_centerless"
+                android:textColor="@color/text"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="@string/register" />
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/btnGoogle"
+                android:textColor="@color/text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/white"
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/google"
+                android:layout_height="wrap_content"
+                android:text="@string/google" />
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

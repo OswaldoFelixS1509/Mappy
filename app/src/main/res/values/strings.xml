@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Mappy</string>
     <string name="Descripcion_logo">Logo de la application Mappy</string>
+    <string name="login">Inicio de sesión</string>
+    <string name="register">Registrarse</string>
+    <string name="or">Ó</string>
+    <string name="google">Iniciar sesión con Google</string>
 </resources>
