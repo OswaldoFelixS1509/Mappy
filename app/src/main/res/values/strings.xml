@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Mappy</string>
+    <string name="Descripcion_logo">Logo de la application Mappy</string>
 </resources>
