@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_login">
+    tools:context=".Activity_Register">
+
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:scrollbars="none"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        >
 
         <LinearLayout
+            android:paddingBottom="50dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:orientation="vertical"
-
-            >
-
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/btnBack"
@@ -30,8 +30,8 @@
                 android:layout_gravity="start"
                 android:contentDescription="@string/btnBack"
                 android:paddingStart="20dp"
-                android:paddingEnd="20dp"
                 android:paddingTop="20dp"
+                android:paddingEnd="20dp"
                 app:srcCompat="@drawable/baseline_arrow_back_ios_black_48dp" />
 
             <ImageView
@@ -43,8 +43,98 @@
                 app:srcCompat="@drawable/logo_mappy" />
 
             <TextView
+                android:id="@+id/txtvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registerScreen"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/txtvBirth"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:paddingTop="30dp"
+                android:text="@string/registerBirth"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:calendarTextColor="@color/black"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/txtName"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/registerName"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="330dp"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:nextFocusDown="@id/txtLastName"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="#2E7D32"
+                android:textSize="16sp"
+                tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/txtLastName"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/registerLastName"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                />
+
+            <EditText
+                android:id="@+id/txtLastName"
+                android:layout_width="330dp"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:nextFocusDown="@id/txtEmail"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="#2E7D32"
+                android:textSize="16sp"
+                tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/txtEmail"
                 android:nextFocusDown="@id/txtEmail"
                 android:paddingStart="20dp"
                 android:paddingTop="20dp"
@@ -52,7 +142,6 @@
                 android:text="@string/email"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:labelFor="@id/txtEmail"
 
                 />
 
@@ -72,7 +161,7 @@
                 android:textColor="@color/black"
                 android:textColorHint="#2E7D32"
                 android:textSize="16sp"
-                tools:ignore="TextContrastCheck" />
+                tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
 
             <TextView
 
@@ -91,6 +180,7 @@
 
             <EditText
                 android:id="@+id/txtPass"
+                android:nextFocusDown="@id/txtName"
                 android:layout_width="330dp"
                 android:layout_height="48dp"
                 android:autofillHints=""
@@ -106,31 +196,20 @@
                 android:textSize="16sp"
                 tools:ignore="TextContrastCheck" />
 
-            <TextView
-                android:id="@+id/txtvForgotPass"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:text="@string/forgotPass"
-                android:textColor="@color/black"
 
-                android:textSize="16sp"
-                android:textStyle="italic" />
 
             <Button
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnRegister"
                 android:layout_width="330dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="50dp"
                 android:background="@drawable/button_border"
-                android:text="@string/login"
+                android:text="@string/register"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                tools:ignore="TextContrastCheck" />
 
+                tools:ignore="TextContrastCheck" />
 
         </LinearLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

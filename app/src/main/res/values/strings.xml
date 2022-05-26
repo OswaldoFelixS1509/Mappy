@@ -5,4 +5,16 @@
     <string name="register">Registrarse</string>
     <string name="or">Ó</string>
     <string name="google">Iniciar sesión con Google</string>
+    <string name="exampleEmail">&#160;ejemplo@email.com</string>
+    <string name="email">Correo*</string>
+    <string name="password">Contraseña*</string>
+    <string name="examplePass">&#160;password1234</string>
+    <string name="forgotPass"> <u>¿Olvidaste tu contraseña? </u></string>
+    <string name="btnBack">Botón para regresar a la pantalla anterior</string>
+    <string name="birthDate">Ingresa tu fecha de nacimiento</string>
+
+    <string name="registerScreen">Registrate y&#xA;diviertete</string>
+    <string name="registerBirth">Fecha de nacimiento*</string>
+    <string name="registerName">Nombre(s)*</string>
+    <string name="registerLastName">Apellido(s)*</string>
 </resources>

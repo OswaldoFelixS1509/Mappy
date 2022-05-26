@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mappy">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/play_store_512"
@@ -9,15 +11,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
         <activity
+            android:name=".Activity_MainMenu"
+            android:screenOrientation="locked"
             android:windowActivityTransitions="true"
-            android:name=".Activity_login"
             android:exported="false" />
         <activity
-            android:windowActivityTransitions="true"
+            android:name=".Activity_Register"
+            android:exported="false"
+            android:screenOrientation="locked"
+            android:windowActivityTransitions="true" />
+        <activity
+            android:name=".Activity_login"
+            android:exported="false"
+            android:screenOrientation="locked"
+            android:windowActivityTransitions="true" />
+        <activity
             android:name=".Activity_SplashScreen"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:screenOrientation="locked"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowActivityTransitions="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,8 +42,8 @@
         <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:windowActivityTransitions="true"
-            />
+            android:screenOrientation="locked"
+            android:windowActivityTransitions="true" />
     </application>
 
 </manifest>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "371595432660",
+    "project_id": "mappy-shop",
+    "storage_bucket": "mappy-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371595432660:android:0a3108268dd258ef546141",
+        "android_client_info": {
+          "package_name": "com.example.mappy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371595432660-po2f48923cu39ijoa9ofu8a0v27aqt3l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlbp_iqJEfql-BkFP8raLiV_TG1njXRPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371595432660-po2f48923cu39ijoa9ofu8a0v27aqt3l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
