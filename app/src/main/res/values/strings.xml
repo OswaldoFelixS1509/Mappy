@@ -17,4 +17,11 @@
     <string name="registerBirth">Fecha de nacimiento*</string>
     <string name="registerName">Nombre(s)*</string>
     <string name="registerLastName">Apellido(s)*</string>
+
+    <string name="passRecovery">Recupera tu contraseña</string>
+    <string name="emailRecovery">Correo de recuperación*</string>
+    <string name="btnPassRecovery">Enviar correo</string>
+    <string name="dialogPassRecovery">Se te ha enviado un correo de recuperación de contraseña</string>
+    <string name="ok">Ok</string>
+    <string name="error">Se ha producido un error,&#xA; Intente de nuevo</string>
 </resources>

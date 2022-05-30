@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/play_store_512"
@@ -11,24 +12,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
         <activity
-            android:name=".Activity_MainMenu"
-            android:screenOrientation="locked"
-            android:windowActivityTransitions="true"
+            android:name=".ActivityForgotPassword"
             android:exported="false" />
         <activity
-            android:name=".Activity_Register"
+            android:name=".Activity_ForgotPass"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMainMenu"
             android:exported="false"
             android:screenOrientation="locked"
             android:windowActivityTransitions="true" />
         <activity
-            android:name=".Activity_login"
+            android:name=".ActivityRegister"
             android:exported="false"
             android:screenOrientation="locked"
             android:windowActivityTransitions="true" />
         <activity
-            android:name=".Activity_SplashScreen"
+            android:name=".Activitylogin"
+            android:exported="false"
+            android:screenOrientation="locked"
+            android:windowActivityTransitions="true" />
+        <activity
+            android:name=".ActivitySplashScreen"
             android:exported="true"
             android:screenOrientation="locked"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"

@@ -9,7 +9,7 @@ import android.view.WindowManager
 //Autor:
 //Oswaldo Félix Sánchez
 @Suppress("DEPRECATION")
-class Activity_SplashScreen : AppCompatActivity() {
+class ActivitySplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)

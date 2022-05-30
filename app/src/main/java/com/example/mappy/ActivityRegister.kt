@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.Toast
 import java.util.*
 
-class Activity_Register : AppCompatActivity() {
+class ActivityRegister : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
